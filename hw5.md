@@ -4,9 +4,6 @@
   (要求Status RunTime 为 0 sec， 即请使用 O(nlogn) 的排序算法。禁止使用algorithm库。)  
 + Sicily 1930 [http://soj.me/1930](http://soj.me/1930)    (选择排序)
 
-###截图示例：
-![AC Screenshot Example](ac_status.png)
-
 ###提交方法
 将AC status记录截图，命名为`12380000_1024_hw3.png`和`12380000_1150_hw3.png`上传ftp。（不需要压缩）  
 
