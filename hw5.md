@@ -1,7 +1,7 @@
 # 课后作业
 
 + Sicily 1154 [http://soj.me/1154](http://soj.me/1154)   
-  (要求Status RunTime 为 0 sec， 即请使用 O(nlogn) 的排序算法。禁止使用algorithm库。)  
+  (要求Status RunTime 为 0 sec， 即请使用 O(nlogn) 的排序算法。禁止使用algorithm库。建议快排，归并可能效率也稍微有点低。)  
 + Sicily 1930 [http://soj.me/1930](http://soj.me/1930)    (选择排序)
 
 ###提交方法
