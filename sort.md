@@ -69,3 +69,37 @@
 ### 归并排序
 **原理：** 分治法思想。两个有序数列合并成一个有序数列的复杂度为O（N），归并就是不停地把数列二分拆成两个数列，直到只剩一个数，此时两个数的排序就很容易了。然后从底部再排完序返回来逐渐合并有序序列。
 
+	void merge(int s1, int e1, int s2, int e2) {
+        int i = s1, j = s2;
+        int cnt = s1;
+
+        while (cnt <= e2) {
+            if ((j > e2 || a[i] <= a[j]) && i <= e1) {
+                b[cnt] = a[i];
+                cnt++;
+                i++;
+            }
+            else if ((i > e1 || a[i] > a[j]) && j <= e2){
+                b[cnt] = a[j];
+                cnt++;
+                j++;
+            }
+        }
+    
+        for (int i = s1; i <= e2; i++)
+            a[i] = b[i];
+    }
+
+    void merge_sort(int l, int h) {
+        if (h - l <= 1) {
+            if (a[l] > a[h])
+                swap(a[l], a[h]);
+            return;
+        }
+
+        int mid = (h + l) / 2;
+        merge_sort(l, mid);
+        merge_sort(mid + 1, h);
+
+        merge(l, mid, mid + 1, h);
+    }
